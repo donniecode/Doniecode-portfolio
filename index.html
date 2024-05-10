@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects Test</title>
+	<link rel="stylesheet" href="style.css">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+<body>
+  
+  <header class="main-header">
+    <div class="container">
+    <nav class="navbar">
+      <p class="logo">doniecode.</p>
+      <ul class="main-menu">
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#section-about-css">About</a></li>
+        <li class="hideOnMobile"><a href="#section-projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#section-contact-css" class="btn btn-nav">Contact</a></li>
+        <li class="menu-btn" onclick=showSidebar()>
+          <a href="#">
+           <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </a>
+        </li>
+      </ul>
+      
+      <ul class="sidebar">
+        <li class="closemenu-btn" onclick=hideSidebar()>
+          <a href="#">
+           <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+           </a>
+          </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#section-about-css">About</a></li>
+        <li><a href="#section-projects">Projects</a></li>
+        <li><a href="#section-contact-css" class="btn btn-sidebar">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+        <h1>
+           Hi, I'm <span>Donald Zarura</span>
+          <span>
+            Front-end Web Developer.
+            </span>
+        </h1>
+        </div>
+          <div class="hero-btns">
+          <a href="#section-contact-css" class="btn">Hire Me</a>
+          <a href="#section-projects" class="btn btn2">View work</a>
+          </div>
+     </div>
+     </div>
+    </section>
+  
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+      <div>
+        <img src="images/donald.jpg" alt="" class="about-img">
+      </div>
+      <div>
+    <h2 class="section-title about-title" id="section-about-css">
+      About Me
+    </h2>
+    <p class="about-lead">
+      Welcome to my digital Portfolio! I'm <span>Donald Zarura.</span> a front-end developer who is self-taught. I am really excited to share my projects with you here. I still learn everyday so i can improve my touch!.
+    </p>
+    <p class="about-text">
+      "I am always open to new opportunities, collaborations and conversations. If you have a project in mind please feel free to reach out. <span>Let's create something extraordinary together!"</span>
+    </p>
+    <p class="about-text">when i'm not coding, i am either watching tutorials, reading docs, playing video games, or learning new things!.
+    </p>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <section class="skills-section">
+    <div class="container">
+    <div class="skills" id="section-skills-css">
+        <h2>Skills</h2>
+      <div class="dropdown">
+       <i class="fa-brands fa-html5"></i>
+        <h3 onclick=showDropdownhtml()>HTML<i class="fas fa-chevron-down"></i></h3>
+        <div class="dropdown-content html-content">
+          <div class="progress-bar">
+            <div class="level-bar">
+              <span>90%</span>
+            </div>
+          </div>
+          <svg onclick=hideDropdownhtml xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          <p>"I know the fundamentals of HTML5 very well and i can create a good structure for any kind of website!"</p>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+       <i class="fa-brands fa-css3"></i>
+        <h3 onclick=showDropdowncss()>CSS<i class="fas fa-chevron-down"></i></h3>
+      <div class="dropdown-content css-content">
+                <div class="progress-bar">
+                  <div class="level-bar level-css">
+                    <span>80%</span>
+                  </div>
+                </div>
+                <svg onclick=hideDropdowncss() xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <p>"I know very well about the GRIDs and FLEXBOXes and how to make a website responsive including animation as well."</p>
+              </div>
+            </div>
+      
+      <div class="dropdown">
+       <i class="fa-brands fa-js"></i>
+        <h3 onclick=showDropdownjs()>JAVASCRIPT<i class="fas fa-chevron-down"></i></h3>
+      <div class="dropdown-content js-content">
+                <div class="progress-bar">
+                  <div class="level-bar level-js">
+                    <span>50%</span>
+                  </div>
+                </div>
+                <svg onclick=hideDropdownjs() xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <p>"I studied Javascript focusing more on the concepts which will make your website interactive!"</p>
+              </div>
+            </div>
+    </div>
+    </div>
+  </section>
+
+<section class="portfolio" id="section-projects">
+  <div class="container">
+    <div class="portfolio-content">
+      <h2 class="section-title portfolio-title">
+        Projects
+      </h2>
+      <div class="portfolio-cards">
+        <div class="card">
+          <img src="images/mandy's.png" alt="">
+          <h3 class="card-name">
+            Mandy's Home Repair Landing page
+          </h3>
+          <a href="https://doniecode.github.io/Mandy-s-Home-Repair/" class="card-link">
+            Live Preview
+          </a>
+        </div>
+        <div class="card">
+          <img src="images/insure.png" alt="">
+          <h3 class="card-name">
+            Insure Landing Page
+          </h3>
+          <a href="https://doniecode.github.io/Insure-Landing-Page/#" class="card-link">
+            Live Preview
+          </a>
+        </div>
+        <div class="card">
+          <img src="images/loopstudios.png" alt="">
+          <h3 class="card-name">
+            Loopstudios Landing Page
+          </h3>
+          <a href="https://doniecode.github.io/loopstudios-/#support" class="card-link">
+            Live Preview
+          </a>
+        </div>
+        <div class="card">
+          <img src="images/testimonials.png" alt="">
+          <h3 class="card-name">
+            Pricing Component With Toggle Button
+          </h3>
+          <a href="https://doniecode.github.io/Pricing-Component-with-Toggle/" class="card-link">
+            Live Preview
+          </a>
+        </div>
+        <div class="card">
+          <img src="images/4columns.png" alt="">
+          <h3 class="card-name">
+            4 Column Features Page
+          </h3>
+          <a href="https://doniecode.github.io/4-card-feature-section/" class="card-link">
+            Live Preview
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="form-wrapper">
+    <h2 class="form-title" id="section-contact-css">
+      Contact Me
+    </h2>
+    <p>Send me a message here!</p>
+    <form action="" class="form">
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" class="name-input" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" class="email-input" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-phone"></i>
+        <input type="number" class="number-input" placeholder="Phone">
+      </div>
+      <div class="form-group msg-group">
+        <i class="fas fa-message"></i>
+        <textarea class="textarea" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit" id="myButton">Submit</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!--Footer-->
+<footer class="footer">
+  <div class="container">
+  <ul class="footer-links">
+  <li>
+      <a href="https://www.linkedin.com/in/donald-zarura-3031032a8">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/doniecode/">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.github.com/doniecode/">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.whatsappweb.com/0835241865">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </li>
+  </ul>
+  <div>
+    <p class="copyright-msg">
+      doniecode &copy 2024
+    </p>
+  </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
