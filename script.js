@@ -3,6 +3,13 @@ function showSidebar(){
   const menuBtn = document.querySelector('.menu-btn');
   sidebar.style.display='flex';
   menuBtn.style.display="none";
+  const expanded = menuBtn.firstElementChild;
+  if(expanded.getAttribute('aria-expanded')=='false'){
+    expanded.setAttribute('aria-expanded', 'true');
+  } else{
+    expanded.setAttribute('aria-expanded', 'false');
+  }
+  
 }
 
 function hideSidebar(){

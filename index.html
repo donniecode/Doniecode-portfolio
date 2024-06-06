@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
         <li class="hideOnMobile"><a href="#section-projects">Projects</a></li>
         <li class="hideOnMobile"><a href="#section-contact-css" class="btn btn-nav">Contact</a></li>
         <li class="menu-btn" onclick=showSidebar()>
-          <a href="#">
+          <a href="#" aria-label="menu button" aria-expanded="false">
            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
           </a>
         </li>
@@ -71,12 +71,12 @@
       <div>
         <img src="images/donald.jpg" alt="" class="about-img">
       </div>
-      <div>
+      <div class="about-text-wrap">
     <h2 class="section-title about-title" id="section-about-css">
       About Me
     </h2>
     <p class="about-lead">
-      Welcome to my digital Portfolio! I'm <span>Donald Zarura.</span> a front-end developer who is self-taught. I am really excited to share my projects with you here. I still learn everyday so i can improve my touch!.
+      Welcome to my digital Portfolio! I'm <span>Donald Zarura.</span> a front-end web developer who is self-taught. I am really excited to share my projects with you here. I still learn everyday so i can improve my touch!.
     </p>
     <p class="about-text">
       "I am always open to new opportunities, collaborations and conversations. If you have a project in mind please feel free to reach out. <span>Let's create something extraordinary together!"</span>
@@ -134,6 +134,23 @@
               </div>
             </div>
     </div>
+    
+    <div class="skills-mobile">
+      <h2>Skills</h2>
+      <div class="skill">
+       <i class="fa-brands fa-html5"></i>
+        <h3>html5</h3>
+      </div>
+      <div class="skill">
+       <i class="fa-brands fa-css3"></i>
+        <h3>css3</h3>
+      </div>
+      <div class="skill">
+       <i class="fa-brands fa-js"></i>
+        <h3>Javascript</h3>
+      </div>
+    </div>
+    
     </div>
   </section>
 
@@ -204,19 +221,29 @@
     <form action="" class="form">
       <div class="form-group">
         <i class="fas fa-user"></i>
-        <input type="text" class="name-input" placeholder="Full Name" required>
+        <input type="text" class="name-input" placeholder="Full Name" required aria-label="type in your full name">
       </div>
       <div class="form-group">
         <i class="fas fa-envelope"></i>
-        <input type="email" class="email-input" placeholder="Email" required>
+        <input type="email" class="email-input" placeholder="Email" required aria-label="type in your email">
       </div>
+      <!--
       <div class="form-group">
         <i class="fas fa-phone"></i>
         <input type="number" class="number-input" placeholder="Phone">
       </div>
+      <div class="form-select">
+        <select name="message-type" id="select">
+          <option value="">Select Type</option>
+          <option value="hiring">Hiring</option>
+          <option value="Got a project">Got a project</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      -->
       <div class="form-group msg-group">
         <i class="fas fa-message"></i>
-        <textarea class="textarea" placeholder="Your message" required></textarea>
+        <textarea class="textarea" placeholder="Your message" required aria-label="write your message"></textarea>
       </div>
       <button type="submit" id="myButton">Submit</button>
     </form>
@@ -244,7 +271,7 @@
       </a>
     </li>
     <li>
-      <a href="https://www.whatsappweb.com/0835241865">
+      <a href="https://wa.link/f7g1ay">
         <i class="fa-brands fa-whatsapp"></i>
       </a>
     </li>
