@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projects Test</title>
 	<link rel="stylesheet" href="style.css">
+  <meta name="description" content="donald zarura's online web development portfolio">
+  <meta name="author" content="Donald Zarura | @doniecode">
+  <meta name="keywords" content="portfolio, web development, web developer, web developer portfolio, frontend developer portfolio">
 	
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>doniecode's portfolio</title>
 	</head>
 <body>
   
@@ -183,20 +187,20 @@
       Contact Me
     </h2>
     <p>Send me a message here!</p>
-    <form action="" class="form">
+    <form action="https://formsubmit.co/be43c93e04d572b6fd38b50ba11e80d8" method="POST" class="form">
       <div class="form-group">
         <i class="fas fa-user"></i>
-        <input type="text" class="name-input" placeholder="Full Name" required aria-label="enter your full name" name="Full Name:">
+        <input type="text" id="name-input" placeholder="Full Name"  aria-label="enter your full name" name="Full Name:">
       </div>
       <div class="form-group">
         <i class="fas fa-envelope"></i>
-        <input type="email" class="email-input" placeholder="Email" required aria-label="enter your email address" name="Email Address:">
+        <input type="email" id="email-input" placeholder="Email"  aria-label="enter your email address" name="Email Address:">
       </div>
       <div class="form-group msg-group">
         <i class="fas fa-message"></i>
-        <textarea class="textarea" placeholder="Your message" required aria-label="write your message" name="Message:"></textarea>
+        <textarea id="textarea" placeholder="Your message"  aria-label="write your message" name="Message:"></textarea>
       </div>
-      <button type="submit" id="myButton">Submit</button>
+      <button type="submit" id="submit-btn">Submit</button>
     </form>
   </div>
 </section>
