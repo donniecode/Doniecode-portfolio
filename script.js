@@ -15,3 +15,10 @@ closemenu.addEventListener("click", function(){
   hamburger.style.display="block";
   closemenu.style.display="none";
 })
+
+//form validation
+const submitbtn = document.querySelector("#submit-btn");
+const nameinput = document.querySelector("#name-input");
+const emailinput = document.querySelector("#email-input");
+const textarea = document.querySelector("#textarea");
+
