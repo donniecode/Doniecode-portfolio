@@ -16,9 +16,12 @@ closemenu.addEventListener("click", function(){
   closemenu.style.display="none";
 })
 
-//form validation
-const submitbtn = document.querySelector("#submit-btn");
-const nameinput = document.querySelector("#name-input");
-const emailinput = document.querySelector("#email-input");
-const textarea = document.querySelector("#textarea");
-
+// back to top button
+const toTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', function(){
+  if(window.pageYOffset > 400){
+    toTop.classList.add('active');
+    } else{
+      toTop.classList.remove('active');
+  }
+})
