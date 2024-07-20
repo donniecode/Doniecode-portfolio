@@ -506,6 +506,7 @@ img{
 }
 .back-to-top i{
   color: white;
+  font-size: 1.5rem;
 }
 .back-to-top.active{
   opacity: 1;
