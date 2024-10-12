@@ -322,22 +322,25 @@ img{
   padding-left: 0.5rem;
 }
 .fa-brands{
-  font-size: 2.5rem;
   cursor: pointer;
 }
 .fa-html5{
+  font-size: 2.2rem;
   color: hsl(15, 90%, 50%);
 }
 .fa-css3{
+  font-size: 2.2rem;
   background-color: hsl(199, 100%, 50%);
   color: #fff;
   padding: 5px;
   font-size: 1rem;
 }
 .fa-js{
+  font-size: 2.2rem;
   color: hsl(50, 100%, 50%);
 }
 .fa-bootstrap{
+  font-size: 2.2rem;
   color: rgb(87, 55, 122);
 }
 
@@ -349,63 +352,55 @@ img{
   margin: 0 auto;
 }
 .portfolio-cards{
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 40px 0 30px 0;
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.projects-desc{
+  font-size: 1rem;
+  font-style: italic;
 }
 .card{
-  min-height: auto;
-  padding: 10px;
+  width: 90%;
+  height: auto;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 5px;
   box-shadow: 2px 2px 5px #c1c1c1, -2px -2px 5px #c1c1c1;
 }
-.card:last-child{
-  
-}
 .card img{
-  width: 150px;
-  margin-bottom: 10px;
+  width: 100%;
+  height: 60%;
   object-fit: cover;
+  position: relative;
 }
 .card-name{
+  margin: 1rem;
+  padding-bottom: 0;
   font-size: 1rem;
   text-align: center;
-  padding-bottom: 10px;
+}
+.card-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
 .link-preview{
   text-align: center;
   color: hsl(210, 100%, 50%);
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-  text-decoration-thickness: 0.1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .link-code{
   text-align: center;
   color: hsl(210, 100%, 50%);
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-  text-decoration-thickness: 0.1rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 500;
-}
-.more-projects{
-  color: #fff;
-  background-color: hsl(210, 100%, 50%);
-  font-weight: 500;
-  border-radius: 5px;
-  padding: 1rem 2rem;
-  box-shadow: 2px 2px 5px #c1c1c1, -2px -2px 5px #c1c1c1;
-}
-.more-projects:hover{
-  background-color: hsl(210, 100%, 70%);
-  cursor: pointer;
 }
 .heading-portfolio{
   margin-bottom: 0;
@@ -419,7 +414,7 @@ img{
 .contact-section{
   width: 100%;
   margin-bottom: 80px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .form-title{
   text-align: center;
@@ -540,7 +535,7 @@ img{
 }
 @media(max-width: 48rem){
   .container{
-    width: 90%;
+    width: 95%;
   }
   .navbar .main-menu{
     display: none; 
@@ -664,13 +659,16 @@ img{
   }
 
   /*Skills section*/
+  #skills{
+    text-align: center;
+  }
   .skills{
     margin-top: 20px;
   }
 
   /*Projects*/
   .portfolio{
-    padding: 80px 0 0 0;
+    padding: 80px 0 50px 0;
     width: 100%;
     display: flex;
     text-align: center;
@@ -678,27 +676,17 @@ img{
     justify-content: center;
     align-items: center;
   }
-  .portfolio-cards{
-    width: 90%;
-    margin: 0 auto;
-    padding: 30px 0 0 0;
-  }
   .projects-desc{
     font-size: 1rem;
     font-style: italic;
     text-align: center;
   }
   .card{
-    width: 90%;
-    padding: 10px 0;
     margin: 0 auto;
-    margin-bottom: 30px;
-  }
-  .card img{
-    width: 100px;
+    margin-bottom: 1rem;
   }
   .card-name{
-    padding-bottom: 0;
+    color: hsl(0, 0%, 25%);
     font-size: 1rem;
   }
 .form-title{
@@ -716,4 +704,18 @@ img{
 .msg-group{
   padding: 10px 20px;
 }
+}
+@media (max-width: 600px){
+  .container{
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .form{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+  }
+  .form-group{
+    width: 100%;
+  }
 }
